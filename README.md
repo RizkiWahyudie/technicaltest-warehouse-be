@@ -1,8 +1,8 @@
 # Warehouse Management System - Backend
 
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
-![Express](https://img.shields.io/badge/Express-4.x-lightgrey)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
+![Node.js](https://img.shields.io/badge/Node.js-20.x-green)
+![Express](https://img.shields.io/badge/Express-5.x-lightgrey)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue)
 
 ## 📝 Description
 Backend API for warehouse inventory management with:

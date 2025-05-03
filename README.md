@@ -32,7 +32,7 @@ Backend API for warehouse inventory management with:
 - **Framework**: Express.js
 - **Database**: PostgreSQL
 - **Authentication**: JWT + bcryptjs
-- **API Docs**: Swagger/OpenAPI 3.0
+- **API Docs**: Swagger
 
 ## 📂 Project Structure
 warehouse-backend/
@@ -76,4 +76,4 @@ warehouse-backend/
 
 ## 📚 API Documentation
 - **Access Swagger UI after running the app:**:
-  - [Login with email/password](http://localhost:5050/api-docs)
+  - [API Swagger Documentation (click)](http://localhost:5050/api-docs)

@@ -10,7 +10,7 @@ info:
 servers:
   - url: http://localhost:5050/api
     description: Development server
-  - url: https://api.warehouse.com/v1
+  - url: https://api.warehouse.com/api
     description: Production server
 
 tags:
@@ -73,6 +73,8 @@ paths:
     get:
       tags: [Products]
       summary: Get all products
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: List of products
@@ -110,6 +112,8 @@ paths:
     get:
       tags: [Products]
       summary: Get product by code
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: code

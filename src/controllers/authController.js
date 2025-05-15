@@ -1,5 +1,5 @@
 const userModel = require('../models/userModel');
-const { generateToken, generateRefreshToken } = require('../utils/auth');
+const { generateToken } = require('../utils/auth');
 const { validationResult } = require('express-validator');
 
 const login = async (req, res, next) => {
@@ -35,13 +35,11 @@ const login = async (req, res, next) => {
 
     // Generate tokens
     const token = generateToken(user);
-    const refreshToken = generateRefreshToken(user);
 
     // Response sukses
     res.json({
       success: true,
       token,
-      refreshToken,
       user: {
         id: user.id,
         email: user.email,

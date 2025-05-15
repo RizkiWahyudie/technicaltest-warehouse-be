@@ -116,7 +116,7 @@ const deleteProduct = async (req, res, next) => {
     // await redisClient.del('allProducts');
     // await redisClient.del(`product:${code}`);
 
-    res.status(204).end();
+    res.status(200).json({ message: "Product successfully deleted!" });
   } catch (error) {
     next(error);
   }
